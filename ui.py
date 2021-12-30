@@ -5,7 +5,7 @@ from tkinter.font import BOLD, Font
 
 import platform
 
-from common.networking import fetch_ip_address
+from common.networking import get_ip_address
 
 def Close(main_window):
     main_window.destroy()
@@ -17,7 +17,7 @@ def create_main_window():
 
     # place a label on the root window
     bold25 = Font(root, size=25, weight=BOLD)
-    message = tk.Label(root, text=f"{fetch_ip_address()} [{platform.platform()}]", font=bold25)
+    message = tk.Label(root, text=f"{get_ip_address()} [{platform.platform()}]", font=bold25)
     message.pack()
 
 
