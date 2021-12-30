@@ -16,7 +16,7 @@ def create_main_window():
     root.title("Control UI")
 
     # place a label on the root window
-    bold25 = Font(root, size=50, weight=BOLD)
+    bold25 = Font(root, size=25, weight=BOLD)
     message = tk.Label(root, text=f"{fetch_ip_address()} [{platform.platform()}]", font=bold25)
     message.pack()
 
